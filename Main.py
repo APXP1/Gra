@@ -54,8 +54,6 @@ while run:
         x -= predkosc
     if keys[pygame.K_RIGHT]:
         x += predkosc
-    if keys[pygame.K_SPACE]:
-        x += predkosc
     #zapętlony wyświetlany pixel przemieszczający się w dół
     while py == 700:
         #ustawienie nowego położenia y
