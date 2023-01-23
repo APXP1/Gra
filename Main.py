@@ -36,7 +36,7 @@ wys = 0
 asteroida = pygame.image.load('asteroida.png')
 postac = pygame.image.load("postać.png")
 tlo = pygame.image.load('tło.webp')
-predkosc = 7
+predkosc = 10
 run = True
 while run:
     for event in pygame.event.get():
