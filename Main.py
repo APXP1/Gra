@@ -84,41 +84,49 @@ while run:
         pp3=-200
     while pp4>720:
         pp4=-200
+    while pp5>720:
+        pp5=-200
     #koniec gry (w przypadku kolizji)
     while (p+130>x and p+130<x+140 and pp+102==y) or (p+30>x and p+30<x+140 and pp+102==y) or (p+210>x and p+210<x+140 and pp+102==y):
         font = pygame.font.SysFont('comicsans', 30)
         label = font.render('Game Over ', 1, (255, 255, 255))
         win.blit(label, (100, 425))
+        pygame.display.update()
         time.sleep(1.5)
         pygame.quit()
     while (p1+130>x and p1+130<x+140 and pp1+102==y) or (p1+30>x and p1+30<x+140 and pp1+102==y) or (p1+210>x and p1+210<x+140 and pp1+102==y):
         font = pygame.font.SysFont('comicsans', 30)
         label = font.render('Game Over ', 1, (255, 255, 255))
         win.blit(label, (300, 425))
+        pygame.display.update()
         time.sleep(1.5)
         pygame.quit()
     while (p2+130>x and p2+130<x+140 and pp2+100==y) or (p2+30>x and p2+30<x+140 and pp2+100==y) or (p2+210>x and p2+210<x+140 and pp2+100==y):
         font = pygame.font.SysFont('comicsans', 30)
         label = font.render('Game Over ', 1, (255, 255, 255))
         win.blit(label, (500, 425))
+        pygame.display.update()
         time.sleep(1.5)
         pygame.quit()
     while (p3+130>x and p3+130<x+140 and pp3+141==y) or (p3+30>x and p3+30<x+140 and pp3+141==y) or (p3+210>x and p3+210<x+140 and pp3+141==y):
         font = pygame.font.SysFont('comicsans', 30)
         label = font.render('Game Over ', 1, (255, 255, 255))
         win.blit(label, (700, 425))
+        pygame.display.update()
         time.sleep(1.5)
         pygame.quit()
     while (p4+130>x and p4+130<x+140 and pp4+120==y) or (p4+30>x and p4+30<x+140 and pp4+120==y) or (p4+210>x and p4+210<x+140 and pp4+120==y):
         font = pygame.font.SysFont('comicsans', 30)
         label = font.render('Game Over ', 1, (255, 255, 255))
         win.blit(label, (900, 425))
+        pygame.display.update()
         time.sleep(1.5)
         pygame.quit()
     while (p5+130>x and p5+130<x+140 and pp5+110==y) or (p5+30>x and p5+30<x+140 and pp5+110==y) or (p5+210>x and p5+210<x+140 and pp5+110==y):
         font = pygame.font.SysFont('comicsans', 30)
         label = font.render('Game Over ', 1, (255, 255, 255))
         win.blit(label, (1100, 425))
+        pygame.display.update()
         time.sleep(1.5)
         pygame.quit()
     #bariera
