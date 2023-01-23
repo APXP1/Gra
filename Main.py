@@ -1,5 +1,6 @@
 import pygame
 import random
+import time
 
 pygame.init()
 win = pygame.display.set_mode((1280, 720))
