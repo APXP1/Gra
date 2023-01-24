@@ -38,6 +38,7 @@ asteroida = pygame.image.load('asteroida.png')
 postac = pygame.image.load("postać.png")
 tlo = pygame.image.load('tło.webp')
 predkosc = 7
+punkty
 run = True
 while run:
     for event in pygame.event.get():
@@ -77,16 +78,22 @@ while run:
     #resetowanie położenia y asteroidy
     while pp>720:
         pp =-200
+        
     while pp1>720:
         pp1=-200
+        punkty += 1
     while pp2>720:
         pp2=-200
+        punkty += 1
     while pp3>720:
         pp3=-200
+        punkty += 1
     while pp4>720:
         pp4=-200
+        punkty += 1
     while pp5>720:
         pp5=-200
+        punkty += 1
     #koniec gry (w przypadku kolizji)
     while (p+130>x and p+130<x+140 and pp+102==y) or (p+30>x and p+30<x+140 and pp+102==y) or (p+210>x and p+210<x+140 and pp+102==y):
         font = pygame.font.SysFont('comicsans', 30)
